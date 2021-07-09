@@ -1,0 +1,196 @@
+* { 
+    margin: 0; padding: 0;
+    background-image: "image/메인배경.jpg";
+    font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.header {
+    display: flex;
+    border: black 1px solid;
+    height: 75px;
+}
+.header > div {
+    display: flex;
+    align-items: center;
+}
+.header > #Date {
+    position: center;
+    display: flex;
+	font-size: 1.2em;
+	flex-direction: column;
+        margin: 0 15px;
+    } 
+.time {
+	display: flex;
+	font-size: 1.2em;
+	flex-direction: column;
+	margin: 0 15px;
+}
+
+.body > .body-box {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.body > .body-box > div {
+    margin: 20px 0px;
+    border: black 1px solid;
+    padding: 30px 0px; 
+}
+
+#Setting {
+    position: absolute;
+    top: 0px;
+    right: -50px;
+}
+
+/* 1번 블럭 */
+#Schedule > li{
+    position: relative;
+    height: 50px;
+    margin-top: 5px;
+}
+#Schedule > li > div{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+}
+#Schedule > li > .info {
+    width: 100%;
+    font-size: 20px;
+    left: 10px;
+    height: 50px;
+    line-height: 50px;
+}
+#Schedule > li > .info > .subject {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#Schedule > li > .info > .homework {
+    display: inline-block;   
+    font-size: 16px;
+}
+#Schedule > li > .time {
+    width: 150px;
+    font-size: 20px;
+    right: 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.box{
+    text-align: center;
+}
+#information {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 30px;
+    line-height: 30px;
+    border: 1px black solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* 2번 블럭 */
+#subject{
+    display: flex;
+    justify-content: center;
+}
+.subject-item{
+    margin: 0px 10px;
+    padding: 0px 5px;
+    display:inline-block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: 1px black solid;
+    
+    cursor: pointer;
+}
+.not-pointer{
+    cursor: auto;
+}
+
+
+#board > li{
+    display: flex;
+    margin: 10px 0px;
+}
+#board > li > .todolist > li {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+}
+#board > li > .todolist {
+    flex: 1;
+}
+#board > li > .todolist > li > .delete-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px 40px;
+    cursor: pointer;
+}
+#board > li > .todolist > li > .check-box {
+    border: 1px black solid;
+    margin-right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#board > li > .todolist > li > input {
+    border: none;
+    border-bottom: 1px black solid;
+    width: 80%;
+    background-color: rgba(0,0,0,0);
+}
+
+#board > li > .todolist > li > .todo {
+    border: none;
+    border-bottom: 1px black solid;
+    width: 80%;
+}
+
+#choose {
+    display: inline-block;
+    text-align: center;
+
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px black solid;
+
+    cursor: pointer;
+}
+.bar {
+    position: fixed;
+    bottom: 0%;
+}
+
+.bar > ul {
+    display: flex;
+}
+.bar .reset-btn {
+   margin-right: 5px;
+}
+.bor a {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    top: 0px;
+    right: 0px;
+    margin-right: 30px;
+    padding: 0px 40px;
+    cursor: pointer;
+} 

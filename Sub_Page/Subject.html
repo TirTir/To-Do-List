@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subject</title>
+        <style>
+            body {
+                background-image: url('../IMG/메인배경.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: center fixed;
+            }
+        </style>
+        <link rel="stylesheet" href="./Style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <div class="root">
+            <!--날짜, 시간-->
+            <div class="header">
+                <div class="date">
+                    <h1 id="month">00</h1>
+                    <h2>월</h2>
+                </div>
+                <div class="date">
+                    <h1 id="day">00</h1>
+                    <h2>일</h2>
+                </div>
+                <div class="date">
+                    <h1 id="week">월</h1>
+                    <h2>요일</h2>
+                </div>
+                <div class="time">
+                    <h1 id="time_h">00</h1>
+                    <small>hours</small>
+                </div>
+                <div class="time">
+                    <h1 id="time_m">00</h1>
+                    <small>minutes</small>
+                </div>
+            </div>
+    
+            <!--popup on == 활성화, off == 비활성화-->
+            <div id="popup" class="off">
+                <div>
+                  <div class="popup-title">시간표 추가</div>
+                  <input id="add-input-subject" type="text" placeholder="과목 이름" />
+                  <div>
+                   <input id="add-input-sDate" type="time" /> ~ 
+                    <input id="add-input-eDate" type="time" />
+                  </div>
+                  <select id="add-input-day">
+                      <option value="0">월</option>
+                      <option value="1">화</option>
+                      <option value="2">수</option>
+                      <option value="3">목</option>
+                      <option value="4">금</option>
+                  </select>
+                   <input id="add-input-score" type="number" /> 
+                   <input id="add-input-homework" type="text" placeholder="과제" />
+    
+                  <div class="popup-btns">
+                    <div id="add">추가</div>
+                    <div id="popup-close">취소</div>
+                  </div>
+                </div>
+            </div>
+    
+            <!--시간표-->
+            <div class="body">
+                <h1>시간표</h1>
+                <div id="popup-open">추가하기</div>
+                <div class="schedule-box">
+                    <div id="schedule"></div>
+                    <table>
+                        <tr>
+                            <th>      </th>
+                            <th>월요일</th>
+                            <th>화요일</th>
+                            <th>수요일</th>
+                            <th>목요일</th>
+                            <th>금요일</th>
+                        </tr>
+                        <tr><td>9  : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>10 : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>11 : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>12 : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>1  : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>2  : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>3  : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>4  : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>5  : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>6  : 00</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="bar">
+                <ul>
+                    <li>
+                        <a href="../Main_Page/To-do List.html" class="reset-btn">
+                            <img src="../IMG/집.png" width="30"height="30"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </body>
+
+    <script src="./JavaScript.js"></script>
+</html>
